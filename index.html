@@ -1,75 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b8f70dafc1.js" crossorigin="anonymous"></script>
-    <title>Drop Down Navigation</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
 </head>
-<body>
-    <!-- NAVBAR  -->
-    <header>
-        <div class="nav-container">
-            <nav>
-                <div class="logo-wrap">
-                    <a href="#"><img src="./Images/logo.svg" alt="logo" class="logo"></a>
-                </div>
-                    <li class="nav-li"><a href="#Features" class="nav-a" >Features</a></li>
-                        <!-- <ul>
-                            <li><a href="#">Todo list</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Reminders</a></li>
-                            <li><a href="#">Planning</a></li>
-                        </ul> -->
-                    <li class="nav-li"><a href="#Company" class="nav-a">Company</a></li>
-                        <!-- <ul>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul> -->
-                    <li class="nav-li"><a href="#Careers" class="nav-a">Careers</a></li>
-                    <li class="nav-li"><a href="#About" class="nav-a">About</a></li>
-                    <a href="#" >Login</a>
-                    <a href="#" class="action-btn">Register</a>
-                </ul>
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-        <div class="drop-down">
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="#Features" class="nav-a">Features</a></li>
-                <li class="nav-li"><a href="#Company" class="nav-a">Company</a></li>
-                <li class="nav-li"><a href="#Careers" class="nav-a">Careers</a></li>
-                <li class="nav-li"><a href="#About" class="nav-a">About</a></li>
-                <li ><a href="#">Login</a></li>
-                <li ><a href="#" class="action-btn">Register</a></li>
-            </ul>
-        </div>
-    </header> 
 
-    <!-- HERO SECTION -->
-    <section>
+<body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <a href="#"><img src="./images/logo.svg" alt="Logo"></a>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Features<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Todo List <i class="fa fa-list-alt"></i></a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Calendar <i class="fa fa-calendar"></i></a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Reminders<i class="fa fa-bell"></i></a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Planning <i class="fa fa-bullseye"></i></a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Company<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">History</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Career</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="btn solid">Login</a>
+                    <a href="#" class="btn transparent">Register</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="./images/image-hero-mobile.png" alt="hero" class="img">
         <div class="container">
             <div class="split">
                 <div class="hero-left">
-                    <h1 class="h1">Make remote work</h1>
+                    <h1 class="h1">Make remote work</h1> <br>
                     <p class="body">Get your team in sync, no matter your location.
                         <br> Streamline processes, create team rituals, and watch productivity soar.
-                    </p> 
+                    </p> <br>
                     <div class="btn-wrap">
-                        <a href="#" class="ghost subheading">Learn more</a>
+                        <a href="#" class="btn-transparent2">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./Images/image-hero-mobile.png" alt="">
-    </section>
-</body>
+    </div>
+
+    <div class="svg">
+        <img src="./images/client-audiophile.svg" alt="svg">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+    </div>
+
+
+    <!-- <main>
+        <section>
+            <div class="overlay"></div>
+        </section>
+    </main> -->
+
+</body> 
+
 </html>
