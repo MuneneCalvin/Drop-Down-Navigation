@@ -1,6 +1,6 @@
-# Frontend Mentor - Time tracking dashboard solution
+# Frontend Mentor - Intro section with Dropdown Nav
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Intro section with Dropdown Nav](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screen%20Shot%202023-05-08%20at%2016.03.14.png)
+![](./images/Screen%20Shot%202023-05-19%20at%2009.56.20.png)
 
 ### Links
 
-- [repo](https://github.com/MuneneCalvin/Time-tracking-dashboard)
+- [repo](https://github.com/MuneneCalvin/Drop-Down-Navigation)
 - [live](https://munenecalvin.github.io/Time-tracking-dashboard/)
 
 ## My process
